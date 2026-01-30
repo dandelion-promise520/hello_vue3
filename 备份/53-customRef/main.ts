@@ -1,0 +1,9 @@
+//引入creatApp用于创建应用
+import { createApp } from "vue";
+
+// 应用App根组件
+import App from "./App.vue";
+
+const app = createApp(App);
+
+app.mount("#app");
