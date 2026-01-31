@@ -2,10 +2,11 @@
 
 // 第一步，引入createRouter
 import { createRouter, createWebHistory } from "vue-router";
+
+import Author from "@/components/Author.vue";
 // 引入可能要呈现的组件
 import Home from "@/components/Home.vue";
 import Person from "@/components/Person.vue";
-import Author from "@/components/Author.vue";
 
 // 第二步，创建路由器
 const router = createRouter({

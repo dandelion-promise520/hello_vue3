@@ -1,18 +1,18 @@
 <template>
-    <div class="father">
-        <h3>父组件</h3>
-        <Child />
-    </div>
+  <div class="father">
+    <h3>父组件</h3>
+    <Child />
+  </div>
 </template>
 
-<script setup lang='ts'>
-import Child from './Child.vue';
+<script setup lang="ts">
+import Child from "./Child.vue";
 </script>
 
 <style scoped>
 .father {
-    background-color: rgb(165, 164, 164);
-    padding: 20px;
-    border-radius: 10px;
+  background-color: rgb(165, 164, 164);
+  padding: 20px;
+  border-radius: 10px;
 }
 </style>

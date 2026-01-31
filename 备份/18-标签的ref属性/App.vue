@@ -1,20 +1,20 @@
 <template>
-    <!-- html -->
-    <h1 ref="title2">你好</h1>
-    <button @click="showLog">测试</button>
-    <Person ref="ren" />
+  <!-- html -->
+  <h1 ref="title2">你好</h1>
+  <button @click="showLog">测试</button>
+  <Person ref="ren" />
 </template>
 
 <script lang="ts" setup name="App">
-import { ref } from 'vue';
-import Person from './components/Person.vue';
+import { ref } from "vue";
+import Person from "./components/Person.vue";
 
-let title2 = ref()
-let ren = ref()
+let title2 = ref();
+let ren = ref();
 
 function showLog() {
-    console.log(title2.value);
-    console.log(ren.value);
+  console.log(title2.value);
+  console.log(ren.value);
 }
 </script>
 

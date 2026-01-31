@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "dist/**",
+    "public/**",
+    "assets/**",
+    ".vscode/**",
+    ".husky/**",
+    "bun.lock",
+    "package.json",
+    "README.md"
+  ],
+  "experimentalTailwindcss": {
+    "attributes": ["class", "className"],
+    "functions": ["clsx", "cn"],
+    "preserveDuplicates": false,
+    "preserveWhitespace": false
+  },
+  "experimentalSortImports": {
+    "groups": [
+      ["side-effect"], // 副作用导入
+      ["builtin"], // Node.js 内置模块
+      ["external", "external-type"], // 外部包/类型
+      ["internal", "internal-type"], // 内部导入/类型
+      ["parent", "parent-type"], // 父目录导入
+      ["sibling", "sibling-type"], // 同级文件导入
+      ["index", "index-type"] // 索引导入
+    ]
+  }
+}

@@ -1,9 +1,5 @@
-<template>
+<template></template>
 
-</template>
-
-<script setup lang='ts' name="Header">
-
-</script>
+<script setup lang="ts" name="Header"></script>
 
 <style></style>

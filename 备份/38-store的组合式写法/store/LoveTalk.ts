@@ -23,9 +23,7 @@ import { reactive } from "vue";
 
 // 组合式写法
 export const useLoveTalkStore = defineStore("LoveTalk", () => {
-  const LoveList = reactive(
-    JSON.parse(localStorage.getItem("talkList") as string) || []
-  );
+  const LoveList = reactive(JSON.parse(localStorage.getItem("talkList") as string) || []);
   async function getATalk() {
     const {
       data: { content: title },

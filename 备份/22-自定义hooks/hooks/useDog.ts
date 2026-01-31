@@ -1,16 +1,12 @@
-import { reactive, onMounted } from "vue";
 import axios from "axios";
+import { reactive, onMounted } from "vue";
 export default function () {
   // 数据
-  let dogList = reactive([
-    "https://images.dog.ceo/breeds/pembroke/n02113023_724.jpg",
-  ]);
+  let dogList = reactive(["https://images.dog.ceo/breeds/pembroke/n02113023_724.jpg"]);
   // 方法
   async function getDog() {
     try {
-      const res = await axios.get(
-        "https://dog.ceo/api/breed/pembroke/images/random"
-      );
+      const res = await axios.get("https://dog.ceo/api/breed/pembroke/images/random");
       dogList.push(res.data.message);
     } catch (error) {
       alert(error);

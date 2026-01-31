@@ -1,20 +1,12 @@
-//引入creatApp用于创建应用
-import { createApp } from "vue";
-
-// 引入pinia
-import { createPinia } from "pinia";
+import "./style.css";
 
 // 应用App根组件
+import VueDndKitPlugin from "@vue-dnd-kit/core";
+import { createApp } from "vue";
+
 import App from "./App.vue";
-import router from "./router";
-
-// 引入mitt组件
-// import { emitter } from "@/utils/emitter";
-
-// 创建Pinia
-const pinia = createPinia();
 const app = createApp(App);
 
-app.use(router);
-app.use(pinia);
+app.use(VueDndKitPlugin);
+
 app.mount("#app");
